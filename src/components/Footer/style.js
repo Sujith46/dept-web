@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../constants/device";
 
 export const FooterContainer = styled.footer`
   display: flex;
@@ -16,9 +17,19 @@ export const FooterMenuContainer = styled.div`
   align-items: center;
   gap: 120px;
 
+  @media ${device.mobile} {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   nav {
     display: flex;
     gap: 20px;
+
+    @media ${device.mobile} {
+      flex-direction: column;
+    }
+
     li {
       list-style: none;
     }
@@ -38,9 +49,19 @@ export const FooterLabelsContainer = styled.div`
   line-height: 18px;
   color: #808080;
 
+  @media ${device.mobile} {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .left__container {
     display: flex;
     align-items: center;
     gap: 36px;
+
+    @media ${device.mobile} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 `;

@@ -7,4 +7,11 @@ export const ButtonPrimary = styled.button`
     background-color: #FFFFFF;
     font-size: 18px;
     line-height: 18px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../constants/device";
 
 export const BlockContainer = styled.div`
     display: flex;
@@ -27,6 +28,11 @@ export const Content = styled.div`
     .content__heading {
         font-size: 48px;
         line-height: 48px;
+
+        @media ${device.mobile} {
+            font-size: 26px;
+            line-height: 26px;
+        }
     }
 
     .content__tag, .content__heading {

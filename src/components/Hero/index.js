@@ -8,7 +8,7 @@ import { Overlay } from "../Block/style";
 const Hero = () => {
   return (
     <HeroContainer>
-      <Image src={HeroImg} alt="seciton-img" />
+      {/* <Image src={HeroImg} alt="seciton-img" /> */}
       <HeroContent>
         <div className="content__tag">{"WORK"}</div>
         <h2 className="content__heading">

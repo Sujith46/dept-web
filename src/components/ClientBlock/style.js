@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../constants/device";
 
 export const ClientBlockContainer = styled.div`
     background-color: #121212;
@@ -29,5 +30,10 @@ export const ClientBlockContainer = styled.div`
         column-gap: 200px;
         row-gap: 84px;
         padding: 0 226px;
+
+        @media ${device.mobile} {
+            padding: 0;
+            column-gap: 0;
+        }
     }
 `
