@@ -24,3 +24,6 @@ npm run dev
 - component : contains all the individual components and its styles / constants / common files
 - globalStyles : styles used only for main page layout
 - state : used to store all the global states using react context
+
+## General note
+- Responsive design - mobile/desktop
