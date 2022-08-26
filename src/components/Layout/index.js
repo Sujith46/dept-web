@@ -1,4 +1,5 @@
 import { GlobalStyles } from "../../globalStyles/theme";
+import Footer from "../Footer";
 import Header from "../Header";
 
 const Layout = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };
