@@ -16,7 +16,7 @@ const ClientBlock = () => {
         {Array(12)
           .fill()
           .map((item, i) => (
-            <div className="img__container">
+            <div className="img__container" key={i}>
               <Image
                 src={require(`../../assets/images/clientlogo/image${
                   i + 1
