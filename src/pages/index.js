@@ -27,12 +27,14 @@ import TestimonialBlock from "../components/TestimonialBlock";
 import ClientBlock from "../components/ClientBlock";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
+import FilterBlock from "../components/FilterBlock";
 
 export default function Home() {
   return (
     <div className="home__root">
       <Layout>
         <Hero />
+        <FilterBlock />
         <SectionContainer>
           <Block
             tag="BOL.COM"
