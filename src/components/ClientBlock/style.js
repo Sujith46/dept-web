@@ -31,9 +31,19 @@ export const ClientBlockContainer = styled.div`
         row-gap: 84px;
         padding: 0 226px;
 
+        .img__container {
+            width: 172px;
+            height: 90px;
+        }
+
         @media ${device.mobile} {
             padding: 0;
             column-gap: 0;
+
+            .img__container {
+                width: 120px;
+                height: auto;
+            }
         }
     }
 `

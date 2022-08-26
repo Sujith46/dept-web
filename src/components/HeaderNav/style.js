@@ -12,6 +12,7 @@ export const HeaderNavContainer = styled.nav`
   li {
     list-style: none;
     position: relative;
+    font-weight: 200;
 
     @media ${device.mobile} {
       display: none;
@@ -39,7 +40,7 @@ export const HeaderNavContainer = styled.nav`
   }
 
   .menu-icon__container {
-    display: inline-flex;
+    display: block;
     border-bottom: none;
     transform: none
   }

@@ -9,8 +9,35 @@ export const MenuContainer = styled.div`
   color: #ffffff;
   z-index: 999;
   padding: 46px;
-  transition: all 0.3s ease;
-  display: ${props => props.isOpen ? "block" : "none"};
+  transition: all 0.8s ease;
+  
+  /* display: ${props => props.isOpen ? "block" : "none"}; */
+
+  &.close {
+    /* display: none; */
+    transition: all 0.4s ease-in-out;
+    transform: translateX(100%);
+    /* animation-name: slidedown;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.6s; */
+  }
+
+  &.open {
+    /* display: block; */
+    transition: all 0.4s ease-in-out;
+    transform: translateX(0px);
+  }
+
+  @keyframe slidedown {
+    from {
+      opacity:
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(none);
+    }
+  }
+
   > * {
     cursor: pointer;
   }

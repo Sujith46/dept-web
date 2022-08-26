@@ -31,7 +31,7 @@ const Menu = ({ isOpen }) => {
   };
 
   return (
-    <MenuContainer className="menu" isOpen={state.isMenuOpen}>
+    <MenuContainer className={`menu ${state.isMenuOpen ? "open" : "close"}`} isOpen={state.isMenuOpen}>
       <div className="menu__header">
         <Image src={DeptLogo} alt="dept-icon" />
         <div className="close-icon" onClick={handleMenuClose}>
