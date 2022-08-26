@@ -20,7 +20,7 @@ npm run dev
 ## Architecture
 
 - src : contains all the code files / assets / pages
-- assets : contains images/fonts/svg files
+- assets : contains images / fonts / svg files
 - component : contains all the individual components and its styles / constants / common files
 - globalStyles : styles used only for main page layout
 - state : used to store all the global states using react context
